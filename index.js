@@ -1,14 +1,14 @@
-receivesAFunction = (genericCallback) => {
-  genericCallback();
-  return "genericCallback has been called!"
+function receivesAFunction(callback) {
+  callback();
+  return "receivesAFunction has been called!"
 }
 
-returnsANamedFunction = () => {
+function returnsANamedFunction() {
   return returnsANamedFunction;
 }
 
-returnsAnAnonymousFunction = () => {
+function returnsAnAnonymousFunction(){
   return function(){
-    return "Hello, World"
+    return "Hello, World";
   }
 }
