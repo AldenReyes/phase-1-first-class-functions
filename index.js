@@ -2,11 +2,13 @@ receivesAFunction = (genericCallback) => {
   genericCallback();
   return "genericCallback has been called!"
 }
+
 returnsANamedFunction = () => {
-  return receivesAFunction;
+  return returnsANamedFunction;
 }
+
 returnsAnAnonymousFunction = () => {
   return function(){
-  console.log("Hello, World")
+    return "Hello, World"
   }
 }
